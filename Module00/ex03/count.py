@@ -26,7 +26,3 @@ def text_analyzer(text="", *other):
         analyze(input("What is the text to analyse? \n"))
     else:
         analyze(text)
-
-
-if __name__ == "__main__":
-    text_analyzer("Python 2.0, released 2000, introduced features like List comprehensions and a garbage collection system capable of collecting reference cycles.")
