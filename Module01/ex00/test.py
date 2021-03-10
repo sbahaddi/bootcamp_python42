@@ -3,16 +3,18 @@ from book import Book
 
 
 def main():
-    # r = Recipe(
-    #     name='Pain',
-    #     cooking_lvl=1,
-    #     cooking_time=15,
-    #     ingredients=['menfou'],
-    #     recipe_type='starter'
-    # )
-    # print(r)
+    r = Recipe(
+        name='Pain',
+        cooking_lvl=1,
+        cooking_time=15,
+        ingredients=['menfou'],
+        recipe_type='Starter'
+    )
 
-    b = Book("name", "12/10/2000", "cooking_time", "ingredients")
+    b = Book("name")
+    b.add_recipe(r)
+    b.get_recipes_by_types("Starter")
+    b.add_recipe(b)
 
 
 if __name__ == "__main__":
